@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw, 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(139, 127, 207), rgb(215, 136, 218));
+    width: 90vmin;
+    height: 92vmin;
+    display: grid; 
+    border: 5px solid black;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.head{
+    background: linear-gradient(black, green);
+    border: .25vmin solid rgb(237, 235, 235);
+    border-radius: 8px;
+}
+.snake{
+    background-color: rgb(82, 82, 10);
+    border: .25vmin solid rgb(27, 19, 19);
+    border-radius: 20px;
+}
+.food{
+    background: url(frog.png);
+    z-index: 55;
+   background-size: 100% 100%;
+}
+#scorebox{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    font-size: xx-large;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    font-size: xx-large;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
